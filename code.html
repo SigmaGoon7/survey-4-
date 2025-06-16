@@ -1,0 +1,124 @@
+!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> PROGRAMMERS UNITE</title>
+   <link rel="stylesheet" href="styles.css">
+   </head>
+   <body class="body">
+     <div>
+       <h1 id="title">Programmers Survey</h1>
+       <p id="description">Welcome to our survey</p>
+       </div>
+       <div>
+         <form id="survey-form">
+           <div>
+             <fieldset>
+         <label id="name-label"><strong>Enter your name: <input id="name" type ="text" required placeholder="Full Name" /></strong></label><br></fieldset>         <br><fieldset><label id="number-label"><strong>Enter your age: <input id="number" type ="number" required min="13" max="100" placeholder="Age" /></strong></label><br></fieldset>
+         <br><fieldset><label id="email-label"><strong>Enter your email: <input id="email" type ="email" required placeholder="Email" /></strong></label><br></fieldset>
+         </div>
+         <div><br>
+           <fieldset>
+           <legend><strong>Favorite Code Software:</legend>
+           <select id="dropdown" name="code" class="form">
+             <option value="">Select any one option</option>
+             <option value="html">HTML</option>
+             <option value="js">Javascript</option>
+             <option value="python">Python</option>
+             <option value="c">C++</option>
+             <option value="other">Others</option>
+             </select>
+             </strong>
+             </div>
+             <div><br>
+               <fieldset>
+                 <legend><strong>Would you recommend us? </strong></legend>
+                 <label class="yes"><input id="yes" type="radio" name="refer" class="yes" checked value="yes"/>Yes</label><br>
+                   <label class="no"><input id="no" type="radio" name="refer" class="no" value="no" />No</label><br>
+                     <label class="maybe"><input id="maybe" type="radio" name="refer" class="maybe" value="maybe"/>Maybe</label><br>
+                        </fieldset>
+                       </div>
+                     <div><br>
+                    <fieldset>
+                      <legend><strong>What is your weakest code software?</strong></legend>
+                      <select id="dropdown" name="weakness" class="form"><br>
+              <option value="">Select any one option</option>
+             <option value="html">HTML</option>
+             <option value="js">Javascript</option>
+             <option value="python">Python</option>
+             <option value="c">C++</option>
+             <option value="other">Others</option>
+             </fieldset>
+             </select>
+             </div>
+             <div><br>
+               <fieldset>
+                 <label><strong>Favorite OS to code on (check all that apply)</strong><label><br>
+                   <input type="checkbox" id="OS" name="windows" class="OS" value="windows" /> Windows<br>
+                   <input type="checkbox" id="OS" name="mac" class="OS" value="macos" /> MacOS<br>
+                   <input type="checkbox" id="OS" name="linux" class="OS" value="linux" /> Linux<br>
+                   <input type="checkbox" id="OS" name="Ubuntu" class="OS" value="ubuntu" /> Ubuntu<br>
+                Others: <input type="text" id="OS" name="others" class="OS" /><br>
+                </fieldset>
+                </div>
+                <div><br>
+                 <fieldset>
+                    <label><strong>Feel free to share your opinions:</strong></label><br>
+                      <textarea style= "height: 50px;" class="form" placeholder="Share your opinions :)"></textarea><br><br>
+                      <input id="submit" type="submit" class="form" />                     </fieldset>  
+                      </div>
+                      </form>
+                      </div>
+                      </body>
+</html>
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+p{
+  font-style: italic;
+}
+input{
+  background-color: white;
+  border-radius: 90px;
+  border: none
+}
+select{
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+
+}
+#submit{
+  background-color: white;
+}
+
+
+/* thanks to the registration form lesson for giving me the color of the background /*
